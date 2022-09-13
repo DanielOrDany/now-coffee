@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="./images/coffee-cup.ico">
+        <title>Coffee Now</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body>
+        <header class="header__wrap">
+            <div class="header container">
+                <div class="header__menu">
+                    <div 
+                        class="header__menu-wrap container2"
+                        onclick="myFunction(this)"
+                    >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="header__menu-title-wrap">
+                        <img class="header__logo" src="./images/coffee.svg" alt="img" />
+                        <a href="#" class="header__menu-title"> | COFFEE <span>NOW</span></a>
+                    </div>
+                </div>
+                <div class="header__contact">
+                    <div  class="header__contact-us-wrap">
+                        <a  class="header__contact-directions" href="#">Contact us</a>
+                    </div>
+                    <div  class="header__contact-directions-wrap">
+                        <a class="header__contact-directions" href="https://www.google.com/maps/place/Coffee+Now/@38.4644549,27.2275158,15z/data=!4m5!3m4!1s0x0:0x20b5406e66df4a36!8m2!3d38.4644549!4d27.2275158">Get directions</a>
+                    </div>
+                    <div  class="header__contact-directions-wrap">
+                        <a class="header__contact-directions" href="#about">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="sidebar-menu">
+            <a class="sidebar-menu__linc" href="#">Contact Us</a>
+            <a class="sidebar-menu__linc" href="https://www.google.com/maps/place/Coffee+Now/@38.4644549,27.2275158,15z/data=!4m5!3m4!1s0x0:0x20b5406e66df4a36!8m2!3d38.4644549!4d27.2275158">Get Directions</a>
+            <a class="sidebar-menu__linc" href="#about">About Us</a>
+        </div>
+
+        <div class="title">COFFEE <span>NOW</span></div>
+        <div class="title-sub">Cafe in İzmir</div>
+        <div class="time">Open today until 7:00 PM </div>
+        <button class="contact-btn">Contact us</button>
+
+        <div class="slideshow-container">
+            <img class="mySlides fade" src="./images/1.png" style="width:100%">
+        
+            <img class="mySlides fade" src="./images/2.png" style="width:100%">
+            
+            <img class="mySlides fade" src="./images/1.png" style="width:100%">
+
+            <img class="mySlides fade" src="./images/2.png" style="width:100%">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="geolocation-title">Contact us</div>
+
+        <iframe class="container geolocation-img" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11610.862650748002!2d27.2216828006954!3d38.46305700563791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x20b5406e66df4a36!2sCoffee%20Now!5e0!3m2!1suk!2sua!4v1662983152036!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contact container" id="about">
+            <div class="address">
+                <div class="address__title">Address</div>
+                <a href="https://www.google.com/maps/place/Coffee+Now/@38.4644549,27.2275158,15z/data=!4m5!3m4!1s0x0:0x20b5406e66df4a36!8m2!3d38.4644549!4d27.2275158" class="address__btn">Get directions</a>
+                <p class="address__text">Erzene, Cengizhan Cd. 1/B, 35040 Bornova/İzmir, Turkey</p>
+                <p class="address__text">Tel. +905332582087</p>
+                <div class="address__rating-wrap">
+                    <p class="address__rating-title">Our rating: </p>
+                    <img class="address__rating-img" src="./images/rating.png" alt="img"/>
+                </div>
+            </div>
+            <div class="daily-time">
+                <div class="daily-time__title">Business Hours</div>
+                <div class="daily-time__time">Mon:  7:00 - 23:00</div>
+                <div class="daily-time__time">Tus:  7:00 - 23:00</div>
+                <div class="daily-time__time">Wed:  7:00 - 23:00</div>
+                <div class="daily-time__time">Thu:  7:00 - 23:00</div>
+                <div class="daily-time__time">Fri:  7:00 - 23:00</div>
+                <div class="daily-time__time">Sad:  8:30 - 23:00</div>
+                <div class="daily-time__time">Sun:  9:00 - 22:00</div>
+            </div>
+            <div class="service-items">
+                <div class="service-items__title">Service options</div>
+                <ul>
+                    <li class="service-item">Kerbside pickup</li>
+                    <li class="service-item">No-contact delivery</li>
+                    <li class="service-item">Delivery</li>
+                    <li class="service-item">Drive-through</li>
+                    <li class="service-item">Takeaway</li>
+                    <li class="service-item">Dine-in</li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}  
+
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 5000); 
+            }
+
+            // -----------menu
+            function myFunction(x) {
+                x.classList.toggle("change");
+                let el= document.getElementsByClassName("sidebar-menu")[0];
+                el.classList.toggle("sidebar-menu__activ");
+            }
+
+
+            let timeOpen = document.getElementsByClassName("time")[0];
+            var d = new Date().getDay();
+            switch (d) {
+                case 0:
+                    timeOpen.innerHTML = 'Open today until 9:00 PM';
+                    break;
+                case 1:
+                    timeOpen.innerHTML = 'Open today until 7:00 PM'                    ;
+                    break;
+                case 2:
+                    timeOpen.innerHTML = 'Open today until 7:00 PM';
+                    break;
+                case 3:
+                    timeOpen.innerHTML = 'Open today until 7:00 PM';
+                    break;
+                case 4:
+                    timeOpen.innerHTML = 'Open today until 7:00 PM';
+                    break;
+                case 5:
+                    timeOpen.innerHTML = 'Open today until 7:00 PM';
+                    break;
+                case 6:
+                    timeOpen.innerHTML = 'Open today until 8:30 PM';
+                    break;
+                default:
+                    console.log("Error");
+                }
+        </script>
+    </body>
+</html>
